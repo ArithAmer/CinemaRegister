@@ -12,29 +12,21 @@ SOURCES += \
     LoginWindow.cpp \
     Users.cpp \
     main.cpp \
-<<<<<<< HEAD
-    mainwindow.cpp \
+    welcome.cpp \
     registerwindow.cpp
 
 HEADERS += \
     Users.h \
-    mainwindow.h \
-    registerwindow.h
-
-FORMS += \
-    mainwindow.ui \
-    registerwindow.ui
-=======
-    welcome.cpp
-
-HEADERS += \
+    registerwindow.h \
     LoginWindow.h \
     welcome.h
 
 FORMS += \
+    registerwindow.ui \
     LoginWindow.ui \
     welcome.ui
->>>>>>> a97dbdc10fca18cda76c8927f01885b6f03d28ff
+
+
 
 TRANSLATIONS += \
     cinema_en_US.ts
