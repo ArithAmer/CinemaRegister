@@ -20,6 +20,6 @@ int main(int argc, char *argv[])
     }
     RegisterWindow R;
     LoginWindow L;
-    L.show();
+    R.show();
     return a.exec();
 }
