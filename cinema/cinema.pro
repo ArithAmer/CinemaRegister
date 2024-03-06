@@ -10,13 +10,16 @@ CONFIG += c++17
 
 SOURCES += \
     LoginWindow.cpp \
-    main.cpp
+    main.cpp \
+    welcome.cpp
 
 HEADERS += \
-    LoginWindow.h
+    LoginWindow.h \
+    welcome.h
 
 FORMS += \
-    LoginWindow.ui
+    LoginWindow.ui \
+    welcome.ui
 
 TRANSLATIONS += \
     cinema_en_US.ts

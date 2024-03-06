@@ -9,13 +9,13 @@ class LoginWindow;
 }
 QT_END_NAMESPACE
 
-class MainWindow : public QMainWindow
+class LoginWindow : public QMainWindow
 {
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr);
-    ~MainWindow();
+    LoginWindow(QWidget *parent = nullptr);
+    ~LoginWindow();
 
 private:
     Ui::LoginWindow *ui;

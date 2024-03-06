@@ -1,14 +1,14 @@
-#include "Error in " Util.relativeFilePath('E:/College/Spring ' 24 / CS2 / Lab_1 / CinemaRegister / mainwindow.h ', ' E : / College / Spring '24/CS2/Lab_1/CinemaRegister' + '/' + Util.path('mainwindow.cpp')) ": SyntaxError: Expected token `)'"
-#include "ui_mainwindow.h"
-
-MainWindow::MainWindow(QWidget *parent)
+#include "ui_loginwindow.h"
+#include "LoginWindow.h"
+#include <QMainWindow>
+LoginWindow::LoginWindow(QWidget *parent)
     : QMainWindow(parent)
-    , ui(new Ui::MainWindow)
+    , ui(new Ui::LoginWindow)
 {
     ui->setupUi(this);
 }
 
-MainWindow::~MainWindow()
+LoginWindow::~LoginWindow()
 {
     delete ui;
 }
