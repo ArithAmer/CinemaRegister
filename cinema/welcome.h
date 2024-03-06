@@ -14,6 +14,7 @@ class Welcome : public QWidget
 public:
     explicit Welcome(QWidget *parent = nullptr);
     ~Welcome();
+    Welcome(QString x);
 
 private:
     Ui::Welcome *ui;
