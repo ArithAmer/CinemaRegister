@@ -10,13 +10,16 @@ CONFIG += c++17
 
 SOURCES += \
     main.cpp \
-    mainwindow.cpp
+    mainwindow.cpp \
+    registerwindow.cpp
 
 HEADERS += \
-    mainwindow.h
+    mainwindow.h \
+    registerwindow.h
 
 FORMS += \
-    mainwindow.ui
+    mainwindow.ui \
+    registerwindow.ui
 
 TRANSLATIONS += \
     cinema_en_US.ts
