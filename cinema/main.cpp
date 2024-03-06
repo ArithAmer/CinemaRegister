@@ -18,11 +18,8 @@ int main(int argc, char *argv[])
             break;
         }
     }
-<<<<<<< HEAD
-    RegisterWindow w;
-=======
-    LoginWindow w;
->>>>>>> a97dbdc10fca18cda76c8927f01885b6f03d28ff
-    w.show();
+    RegisterWindow R;
+    LoginWindow L;
+    L.show();
     return a.exec();
 }
