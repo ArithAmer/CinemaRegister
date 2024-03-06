@@ -9,7 +9,9 @@ CONFIG += c++17
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += \
+    LoginWindow.cpp \
     main.cpp \
+<<<<<<< HEAD
     mainwindow.cpp \
     registerwindow.cpp
 
@@ -20,6 +22,17 @@ HEADERS += \
 FORMS += \
     mainwindow.ui \
     registerwindow.ui
+=======
+    welcome.cpp
+
+HEADERS += \
+    LoginWindow.h \
+    welcome.h
+
+FORMS += \
+    LoginWindow.ui \
+    welcome.ui
+>>>>>>> a97dbdc10fca18cda76c8927f01885b6f03d28ff
 
 TRANSLATIONS += \
     cinema_en_US.ts

@@ -1,4 +1,4 @@
-#include "mainwindow.h"
+#include "LoginWindow.h"
 
 #include <QApplication>
 #include <QLocale>
@@ -18,7 +18,11 @@ int main(int argc, char *argv[])
             break;
         }
     }
+<<<<<<< HEAD
     RegisterWindow w;
+=======
+    LoginWindow w;
+>>>>>>> a97dbdc10fca18cda76c8927f01885b6f03d28ff
     w.show();
     return a.exec();
 }
