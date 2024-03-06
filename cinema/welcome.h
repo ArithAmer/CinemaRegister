@@ -12,9 +12,11 @@ class Welcome : public QWidget
     Q_OBJECT
 
 public:
-    explicit Welcome(QWidget *parent = nullptr);
+    explicit Welcome(QWidget *parent = nullptr, QString x = "");
     ~Welcome();
-    Welcome(QString x);
+
+private slots:
+    void on_logout_clicked();
 
 private:
     Ui::Welcome *ui;
