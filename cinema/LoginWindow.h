@@ -15,6 +15,8 @@ class LoginWindow : public QMainWindow
 
 public:
     LoginWindow(QWidget *parent = nullptr);
+    void on_login_clicked();
+    void on_register_clicked();
     ~LoginWindow();
 
 private:

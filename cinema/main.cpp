@@ -1,9 +1,9 @@
 #include "LoginWindow.h"
-
+#include "Users.h"
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
-#include "registerwindow.h"
+
 
 int main(int argc, char *argv[])
 {
@@ -18,7 +18,6 @@ int main(int argc, char *argv[])
             break;
         }
     }
-    RegisterWindow R;
     LoginWindow L;
     R.show();
     return a.exec();
