@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
  <class>Welcome</class>
- <widget class="QWidget" name="Welcome">
+ <widget class="QDialog" name="Welcome">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>800</width>
-    <height>600</height>
+    <width>852</width>
+    <height>592</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Form</string>
+   <string>Dialog</string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
      <x>80</x>
-     <y>70</y>
+     <y>50</y>
      <width>291</width>
      <height>20</height>
     </rect>
@@ -30,7 +30,7 @@
    <property name="geometry">
     <rect>
      <x>100</x>
-     <y>510</y>
+     <y>490</y>
      <width>83</width>
      <height>29</height>
     </rect>
@@ -43,7 +43,7 @@
    <property name="geometry">
     <rect>
      <x>180</x>
-     <y>130</y>
+     <y>110</y>
      <width>441</width>
      <height>341</height>
     </rect>
@@ -52,7 +52,7 @@
     <string/>
    </property>
    <property name="pixmap">
-    <pixmap>cinema1.png</pixmap>
+    <pixmap>../../Assignment/CinemaRegister/cinema/cinema1.png</pixmap>
    </property>
   </widget>
  </widget>

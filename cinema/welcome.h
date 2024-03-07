@@ -1,18 +1,19 @@
 #ifndef WELCOME_H
 #define WELCOME_H
 
-#include <QWidget>
+#include <QDialog>
+#include <QString>
 
 namespace Ui {
 class Welcome;
 }
 
-class Welcome : public QWidget
+class Welcome : public QDialog
 {
     Q_OBJECT
 
 public:
-    explicit Welcome(QWidget *parent = nullptr, QString x = "");
+    explicit Welcome(QWidget *parent = nullptr, QString x = "", int age = 0);
     ~Welcome();
 
 private slots:

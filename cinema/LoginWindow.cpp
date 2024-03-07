@@ -1,10 +1,9 @@
+#include <QMainWindow>
 #include "ui_loginwindow.h"
 #include "LoginWindow.h"
-#include <QMainWindow>
 #include "Users.h"
-#include "users.cpp"
-#include "welcome.h"
 #include "registerwindow.h"
+#include "welcome.h"
 #include <QString>
 LoginWindow::LoginWindow(QWidget *parent)
     : QMainWindow(parent)
@@ -27,15 +26,17 @@ void LoginWindow::on_login_clicked()
     if(index == -1) ui->errors->setVisible(true);
     else{
         if(password == passwords[index]){
-            Welcome * wel = new Welcome(this, username);
             hide();
+            Welcome * wel = new Welcome(this, username, ages[index]);
             wel->show();
+        }else{
+            ui->errors->setVisible(true);
         }
     }
 }
 void LoginWindow::on_register_clicked()
 {
-    hide();
+
 
 }
 
@@ -43,3 +44,11 @@ LoginWindow::~LoginWindow()
 {
     delete ui;
 }
+
+void LoginWindow::on_pushButton_2_clicked()
+{
+    hide();
+    RegisterWindow* reg = new RegisterWindow(this);
+    reg->show();
+}
+

@@ -1,14 +1,14 @@
 #include "welcome.h"
 #include "ui_welcome.h"
-#include "LoginWindow.h"
+#include "loginwindow.h"
 #include <QString>
 
-Welcome::Welcome(QWidget *parent, QString x)
-    : QWidget(parent)
-    , ui(new Ui::Welcome)
+Welcome::Welcome(QWidget *parent, QString x, int age) :
+    QDialog(parent),
+    ui(new Ui::Welcome)
 {
     ui->setupUi(this);
-    ui->label->setText("Welcome "+ x + ", ");
+    ui->label->setText("Welcome "+ x + " " + QString::number(age));
 }
 
 Welcome::~Welcome()

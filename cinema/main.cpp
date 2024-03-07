@@ -1,9 +1,8 @@
-#include "LoginWindow.h"
-#include "Users.h"
+#include "loginwindow.h"
+
 #include <QApplication>
 #include <QLocale>
 #include <QTranslator>
-
 
 int main(int argc, char *argv[])
 {
@@ -12,13 +11,13 @@ int main(int argc, char *argv[])
     QTranslator translator;
     const QStringList uiLanguages = QLocale::system().uiLanguages();
     for (const QString &locale : uiLanguages) {
-        const QString baseName = "cinema_" + QLocale(locale).name();
+        const QString baseName = "CinemaProject_" + QLocale(locale).name();
         if (translator.load(":/i18n/" + baseName)) {
             a.installTranslator(&translator);
             break;
         }
     }
-    LoginWindow L;
-    R.show();
+    LoginWindow w;
+    w.show();
     return a.exec();
 }

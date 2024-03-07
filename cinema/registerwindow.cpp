@@ -1,6 +1,7 @@
 #include "registerwindow.h"
 #include "ui_registerwindow.h"
 #include "Users.cpp"
+#include "welcome.h"
 
 RegisterWindow::RegisterWindow(QWidget *parent)
     : QDialog(parent)
@@ -119,8 +120,13 @@ void RegisterWindow::on_RegisterButton_clicked()
         ui->AllFieldCheckerLabel->setVisible(true);
     }else{
         ui->AllFieldCheckerLabel->setVisible(false);
-        //Show the welcome page, pass age and name as constructor
-
+        usernames[usersCount] = getName();
+        passwords[usersCount] = getPass();
+        ages[usersCount] = (2024 - getYear());
+        usersCount++;
+        hide();
+        Welcome* wel = new Welcome(this, getName(), 2024 - getYear());
+        wel->show();
     }
 }
 
